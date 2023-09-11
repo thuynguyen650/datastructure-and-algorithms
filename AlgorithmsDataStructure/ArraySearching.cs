@@ -13,4 +13,26 @@ public class ArraySearching
         }
         return -1;
     }
+
+    public static int BinarySearch(int[] arr, int x)
+    {
+        int l = 0;
+        int r = arr.Length - 1;
+        while (l <= r)
+        {
+            int mid = l + (r - l) / 2;
+            if (arr[mid] == x)
+            {
+                return mid;
+            }    
+            if (arr[mid] > x)
+            {
+                r = mid - 1;
+            } else
+            {
+                l = mid + 1;
+            }
+        }
+        return -1;
+    }
 }

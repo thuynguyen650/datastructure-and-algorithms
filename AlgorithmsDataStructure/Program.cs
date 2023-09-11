@@ -7,7 +7,7 @@ public class Program
         int[] arr = { 2, 3, 4, 10, 40 };
         int x = 10;
 
-        int result = ArraySearching.LinearSearch(arr, x);
+        int result = ArraySearching.BinarySearch(arr, x);
 
         if (result == -1)
         {
