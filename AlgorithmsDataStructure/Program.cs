@@ -4,18 +4,13 @@ public class Program
 {
     static void Main(string[] args)
     {
-        int[] arr = { 2, 3, 4, 10, 40 };
-        int x = 10;
+        int[] arr = { 64, 25, 12, 22, 11 };
 
-        int result = ArraySearching.RecursiveBinarySearch(arr, 0, arr.Length - 1, x);
+        ArraySorting.SelectionSort(arr);
 
-        if (result == -1)
+        foreach (int i in arr)
         {
-            Console.WriteLine("Element is not present in array");
-        }
-        else
-        {
-            Console.WriteLine($"Element is present at index {result}");
+            Console.WriteLine(i);
         }
     }
 }
